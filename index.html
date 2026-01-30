@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Personal Portfolio Website Using HTML CSS & JavaScript | Codehal</title>
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- header -->
+     <header class="active">
+        <a href="#" class="logo">Aarti.</a>
+
+        <i class='bx  bx-menu' id="menu-icon"></i> 
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#services">Services</a>
+            <a href="#resume">Resume</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+
+     </header>
+
+    <!-- bars background -->
+     <div class="bars-box active">
+        <div class="bar" style="--i:6"></div>
+        <div class="bar" style="--i:5"></div>
+        <div class="bar" style="--i:4"></div>
+        <div class="bar" style="--i:3"></div>
+        <div class="bar" style="--i:2"></div>
+        <div class="bar" style="--i:1"></div>
+     </div>
+
+    <!-- home section -->
+
+    <section class="home active">
+
+        <div class="home-detail">
+            <!-- <h3>Hello, I'm</h3> -->
+            <h1>Aarti Ravariya</h1>
+            <h2> I'm a 
+                <span style="--i:4;" data-text="Data Scientist">Data Scientist</span>
+                <span style="--i:3;" data-text="ML Engineer">ML Engineer</span>
+                <span style="--i:2;" data-text="AI Consultant">AI Consultant</span>
+                <span style="--i:1;" data-text="Python Developer">Python Developer</span>
+
+            </h2>
+            <!-- <h3>And I'm a <span class="typing"></span></h3> -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. </p>
+            <!-- <a href="#" class="btn">Hire Me</a> -->
+             <div class="btn-sci">
+                <a href="#" class='btn'>Download CV</a>
+                <div class="sci">
+                    <a href="#"><i class="bx bxl-github"></i></a>
+                    <a href="#"><i class="bx bxl-linkedin"></i></a>
+                    <!-- <a href="#"></a>
+                    <a href="#"></a> -->
+             </div>
+        </div>
+        </div>
+
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="images/aarti_sample_profile_picture.jpg">
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- services section -->
+
+    <section class="services">
+        <h2 class="heading">My <span> Services</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <div class="icon">
+                    <i class='bx  bx-code'></i> 
+                    <a href="#"><i class='bx  bx-arrow-back'></i> </a>
+                </div>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+            </div>
+
+            <div class="services-box">
+                <div class="icon">
+                    <i class='bx  bx-paint'></i> 
+                    <a href="#"><i class='bx  bx-arrow-back'></i> </a>
+                </div>
+                <h3>UI/UX Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+            </div>
+
+            <div class="services-box">
+                <div class="icon">
+                    <i class='bx  bx-palette'></i>
+                    <a href="#"><i class='bx  bx-arrow-back'></i> </a>
+                </div>
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+            </div>
+
+            <div class="services-box">
+                <div class="icon">
+                    <i class='bx  bx-trending-up'></i> 
+                    <a href="#"><i class='bx  bx-arrow-back'></i> </a>
+                </div>
+                <h3>SEO</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+            </div>
+
+            <div class="services-box">
+                <div class="icon">
+                    <i class='bx  bx-slideshow'></i> 
+                    <a href="#"><i class='bx  bx-arrow-back'></i> </a>
+                </div>
+                <h3>Video Editing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+            </div>
+
+            <div class="services-box">
+                <div class="icon">
+                    <i class='bx  bx-camera'></i>
+                    <a href="#"><i class='bx  bx-arrow-back'></i> </a>
+                </div>
+                <h3>Photography</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- resume section -->
+     <section class="resume">
+        <div class="resume-container">
+            <div class="resume-box">
+                <h2>Why Hire Me?</h2>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod.</p>
+                <button class="resume-btn active">Experience</button>
+                <button class="resume-btn">Education</button>
+                <button class="resume-btn">Skills</button>
+                <button class="resume-btn">About Me</button>
+            </div>
+            <div class="resume-box">
+                <div class="resume-detail experience active">
+                    <h2 class="heading">My <span>Experience</span></h2>
+                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod.</p>
+                    <div class="resume-list">
+                        <div class="resume-item">
+                            <p class="year">Sept 2024 - Present</p>
+                            <h3>Sr. Consultant - Gen AI</h3>
+                            <p class="company">Deloitte</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod.</p>
+                        </div>
+
+                        <div class="resume-item">
+                            <p class="year">Feb 2022 - Sept 2024</p>
+                            <h3>ML Engineer</h3>
+                            <p class="company">L&T Finance Ltd.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod.</p>
+                        </div>
+
+                        <div class="resume-item">
+                            <p class="year">Sept 2020 - Feb 2022</p>
+                            <h3>Data Scientist</h3>
+                            <p class="company">NSEIT Ltd.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod.</p>
+                        </div>
+
+                        <div class="resume-item">
+                            <p class="year">May 2019 - July 2020</p>
+                            <h3>Associate Data Scientist</h3>
+                            <p class="company">eClerx Services Ltd.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="resume-detail Education">
+                    <h2 class="heading">My <span>Education</span></h2>
+                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod.</p>
+                    <div class="resume-list">
+                        <div class="resume-item">
+                            <p class="year">2021</p>
+                            <h3>Post Graduate Program in Data Science</h3>
+                            <p class="company">Purdue University</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod.</p>
+                        </div>
+
+                        <div class="resume-item">
+                            <p class="year">2018</p>
+                            <h3>Bachelor of Science in Information Technology</h3>
+                            <p class="company">Mumbai University</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-detail skills">
+                    <h2 class="heading">My <span>Skills</span></h2>
+                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod.</p>
+                    <div class="resume-list">
+                        <div class="resume-item">
+                            <i class="devicon-python-plain colored"></i>
+                            <span>Python</span>
+                        </div>
+
+                        <div class="resume-item">
+                            <i class="devicon-tensorflow-original colored"></i>
+                            <span>Machine Learning</span>
+                        </div>
+
+                        <div class="resume-item">
+                            <i class="devicon-pytorch-original colored"></i> 
+                            <span>Deep Learning</span>
+                        </div>
+
+                        <div class="resume-item">
+                            <i class="devicon-sqldeveloper-plain colored"></i>
+                            <span>SQL</span>
+                        </div>
+
+                        <div class="resume-item"> 
+                            <i class="devicon-illustrator-plain colored"></i>
+                            <span>Gen AI</span>
+                        </div>
+
+                        <div class="resume-item">
+                            <i class='bx  bx-server'></i> 
+                            <span>MLOps & LLMOps</span>
+                        </div>
+
+                        <div class="resume-item">
+                            <i class="devicon-googlecloud-plain colored"></i>
+                            <span>Cloud (GCP, AWS, Azure)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-detail about">
+                    <h2 class="heading">About <span>Me</span></h2>
+                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod.</p>
+                    <div class="resume-list">
+                        <div class="resume-item">
+                            <p>Name <span>Aarti Ravariya</span></p>
+                        </div>
+
+                        <div class="resume-item">
+                            <p>City <span>Mumbai</span></p>
+                        </div>
+
+                        <div class="resume-item">
+                            <p>Nationality <span>Indian</span></p>
+                        </div>
+
+                        <div class="resume-item">
+                            <p>Experience <span>6+ years</span></p>
+                        </div>
+
+                        <div class="resume-item">
+                            <p>Full Time <span>Available</span></p>
+                        </div>
+
+                        <div class="resume-item">
+                            <p>Freelance <span>Available</span></p>
+                        </div>
+
+                        <div class="resume-item">
+                            <p>Email <span>aartiravariyaa@gmail.com</span></p>
+                        </div>
+
+                        <div class="resume-item">
+                            <p>Languages <span>English</span></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     </section>
+
+    <!-- portfolio section -->
+     <section class="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <div class="portfolio-detail active">
+                    <p class="numb">01</p>
+                    <h3>Project Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quo unde nobis exercitationem blanditiis 
+                        laudantium cum corrupti asperiores!</p>
+                    <div class="tech">
+                        <p>HTML, CSS3, JavaScript</p>
+                    </div>
+                    <div class="live-github">
+                        <a href="#"><i class='bx  bx-arrow-back'></i><span>Live Project</span> </a>
+                        <a href="#"><i class="bx bxl-github"></i><span>Github Repository</span></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-detail">
+                    <p class="numb">02</p>
+                    <h3>Project Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quo unde nobis exercitationem blanditiis 
+                        laudantium cum corrupti asperiores!</p>
+                    <div class="tech">
+                        <p>HTML, CSS3, JavaScript</p>
+                    </div>
+                    <div class="live-github">
+                        <a href="#"><i class='bx  bx-arrow-back'></i><span>Live Project</span> </a>
+                        <a href="#"><i class="bx bxl-github"></i><span>Github Repository</span></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-detail">
+                    <p class="numb">03</p>
+                    <h3>Project Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quo unde nobis exercitationem blanditiis 
+                        laudantium cum corrupti asperiores!</p>
+                    <div class="tech">
+                        <p>HTML, CSS3, JavaScript</p>
+                    </div>
+                    <div class="live-github">
+                        <a href="#"><i class='bx  bx-arrow-back'></i><span>Live Project</span> </a>
+                        <a href="#"><i class="bx bxl-github"></i><span>Github Repository</span></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-detail">
+                    <p class="numb">04</p>
+                    <h3>Project Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quo unde nobis exercitationem blanditiis 
+                        laudantium cum corrupti asperiores!</p>
+                    <div class="tech">
+                        <p>HTML, CSS3, JavaScript</p>
+                    </div>
+                    <div class="live-github">
+                        <a href="#"><i class='bx  bx-arrow-back'></i><span>Live Project</span> </a>
+                        <a href="#"><i class="bx bxl-github"></i><span>Github Repository</span></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-detail">
+                    <p class="numb">05</p>
+                    <h3>Project Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quo unde nobis exercitationem blanditiis 
+                        laudantium cum corrupti asperiores!</p>
+                    <div class="tech">
+                        <p>HTML, CSS3, JavaScript</p>
+                    </div>
+                    <div class="live-github">
+                        <a href="#"><i class='bx  bx-arrow-back'></i><span>Live Project</span> </a>
+                        <a href="#"><i class="bx bxl-github"></i><span>Github Repository</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Carousel -->
+            <div class="portfolio-box">
+                <div class="portfolio-carousel">
+                    <div class="img-slide">
+                        <div class="img-item">
+                            <img src="images/portfolio1.jpg">
+                        </div>
+
+                        <div class="img-item">
+                            <img src="images/portfolio2.jpg">
+                        </div>
+
+                        <div class="img-item">
+                            <img src="images/portfolio3.jpg">
+                        </div>
+
+                        <div class="img-item">
+                            <img src="images/portfolio4.jpg">
+                        </div>
+
+                        <div class="img-item">
+                            <img src="images/portfolio5.jpg">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="navigation">
+                    <button class="arrow-left disabled"><i class='bx  bx-chevron-left'></i> </button>
+                    <button class="arrow-right"><i class='bx  bx-chevron-right'></i> </button>
+
+                </div>
+
+
+            </div>
+        </div>
+     </section>
+
+    <!-- contact section -->
+     <section class="contact">
+        <div class="contact-container">
+            <div class="contact-box">
+                <h2>Let's Work Together</h2>
+                <p class="desc">I'm currently available for freelance work and open to new opportunities. Feel free to reach out if you have a project in mind or just want to connect!</p>
+                <div class="contact-detail">
+                    <i class="bx bx-envelope"></i>
+                    <div class="detail">
+                        <p>Email</p>
+                        <p>aartiravariyaa@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <i class="bx bx-map-pin"></i>
+                    <div class="detail">
+                        <p>Address</p>
+                        <p>Mumbai 400055, India</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contact-box">
+                <form id="contact-form">
+                    <h2 class="heading">Contact <span>Me!</span></h2>
+
+                    <div class="field-box">
+
+                        <input type="text" name="name" placeholder="Full Name" required>
+
+                        <input type="email" name="email" placeholder="Email Address" required>
+
+                        <input type="text" name="phone" placeholder="Phone Number">
+
+                        <input type="text" name="subject" placeholder="Email Subject" required>
+
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+
+                    </div>
+
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                <div id="toast"></div>
+            </div>
+
+
+        </div>
+     </section>
+    
+
+    <!-- custom js -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    
+    <script src="js/script.js"></script>
+</body>
+
+</html>
