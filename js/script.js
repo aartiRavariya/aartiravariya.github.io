@@ -80,6 +80,7 @@ navLinks.forEach((link, idx) => {
 
             setTimeout(() => {
                 sections[idx].classList.add('active');
+                adjustFooterPadding();
             }, 1100);
         }
     });
@@ -93,6 +94,7 @@ logoLink.addEventListener('click', () => {
 
         setTimeout(() => {
                 sections[0].classList.add('active');
+                adjustFooterPadding();
             }, 1100);
     }
 });
@@ -169,3 +171,36 @@ arrowLeft.addEventListener('click', () => {
 
     activePortfolio();
 });
+
+
+/* Adjust body bottom padding so fixed footer doesn't cover content, but avoid
+   adding padding when it would create an unnecessary scrollbar. */
+function adjustFooterPadding() {
+    const footer = document.querySelector('.footer');
+    if (!footer) return;
+
+    // reset before measuring
+    document.body.style.paddingBottom = '0px';
+
+    const footerHeight = footer.offsetHeight || 0;
+    const docHeight = document.documentElement.scrollHeight;
+    const winHeight = window.innerHeight;
+
+    // If content is taller than viewport, reserve space so last content isn't hidden.
+    if (docHeight > winHeight) {
+        document.body.style.paddingBottom = footerHeight + 'px';
+    } else {
+        document.body.style.paddingBottom = '0px';
+    }
+}
+
+// Recalculate on load and resize
+window.addEventListener('load', adjustFooterPadding);
+window.addEventListener('resize', () => {
+    // small debounce
+    clearTimeout(window._adjustFooterTimer);
+    window._adjustFooterTimer = setTimeout(adjustFooterPadding, 120);
+});
+
+// Run once now in case the page is already loaded
+setTimeout(adjustFooterPadding, 50);
