@@ -968,7 +968,7 @@ section.active {
     width: 100%;
     background-color: var(--second-bg-color);
     border-top: 1px solid rgba(124, 240, 61, 0.2);
-    padding: 0.8rem 0;
+    padding: 0.6rem 0;
     text-align: center;
     z-index: 100;
 }
@@ -976,8 +976,29 @@ section.active {
 .footer p {
     color: var(--muted-color);
     font-size: 1.2rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.08rem;
     margin: 0;
+}
+
+/* Ensure footer doesn't overlap page content */
+body {
+    padding-bottom: 4rem; /* reserve space for fixed footer */
+}
+
+/* Prefer safe-area inset when available (devices with notches) */
+@supports (padding: env(safe-area-inset-bottom)) {
+    body {
+        padding-bottom: calc(env(safe-area-inset-bottom) + 4rem);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        padding-bottom: calc(env(safe-area-inset-bottom) + 5.2rem);
+    }
+    .footer {
+        padding: 0.6rem 0;
+    }
 }
 
 @media screen and (max-width: 450px) {
