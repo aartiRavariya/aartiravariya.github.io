@@ -183,12 +183,26 @@ function adjustFooterPadding() {
     document.body.style.paddingBottom = '0px';
 
     const footerHeight = footer.offsetHeight || 0;
+    // Try to detect safe-area inset bottom (for notched devices)
+    let safeInset = 0;
+    try {
+        const temp = document.createElement('div');
+        temp.style.cssText = 'position:fixed;visibility:hidden;padding-bottom:constant(safe-area-inset-bottom);padding-bottom:env(safe-area-inset-bottom);';
+        document.body.appendChild(temp);
+        const cs = window.getComputedStyle(temp);
+        const pad = cs.paddingBottom || cs.getPropertyValue('padding-bottom');
+        safeInset = parseFloat(pad) || 0;
+        document.body.removeChild(temp);
+    } catch (e) {
+        safeInset = 0;
+    }
     const docHeight = document.documentElement.scrollHeight;
     const winHeight = window.innerHeight;
 
     // If content is taller than viewport, reserve space so last content isn't hidden.
     if (docHeight > winHeight) {
-        document.body.style.paddingBottom = footerHeight + 'px';
+        const total = footerHeight + safeInset;
+        document.body.style.paddingBottom = total + 'px';
     } else {
         document.body.style.paddingBottom = '0px';
     }
