@@ -960,6 +960,26 @@ section.active {
     
 }
 
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--second-bg-color);
+    border-top: 1px solid rgba(124, 240, 61, 0.2);
+    padding: 0.8rem 0;
+    text-align: center;
+    z-index: 100;
+}
+
+.footer p {
+    color: var(--muted-color);
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    margin: 0;
+}
+
 @media screen and (max-width: 450px) {
     html {
         font-size: 50%;
